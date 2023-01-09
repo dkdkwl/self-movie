@@ -8,7 +8,6 @@ const Card = () => {
         axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`)
         .then((response)=>{
             setPopularData(response.data.results)
-            console.log(response)
         })
     }
     useEffect(()=>{
